@@ -16,6 +16,7 @@ def is_unique(str)
 end
 
 # Test Cases
+
 puts is_unique('aeiou') # expect true
 puts is_unique('saywut') # expect true
 
