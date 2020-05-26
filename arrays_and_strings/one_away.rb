@@ -17,7 +17,6 @@ def one_away(str_1, str_2)
     chars_2.delete((chars_2 - chars_1).pop) # delete the extra character and compare the rest
   end
 
-
   # Step #3: We should be working with equal lengths at this point and we can compare each char
   one_away = compare(chars_1, chars_2)
   return one_away <= 1
@@ -25,11 +24,9 @@ end
 
 def compare(chars_1, chars_2)
   edits = 0
-
   for i in 0...chars_1.length
     edits += 1 if chars_1[i] != chars_2[i]
   end
-
   return edits
 end
 
